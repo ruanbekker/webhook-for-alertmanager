@@ -83,6 +83,6 @@ receivers:
 
 ```
 
-Example event when a alert fires: [webhook-event-firing.json)](https://github.com/ruanbekker/webhook-for-alertmanager/blob/master/webhook-event-firing.json)
+Example event when a alert fires: [webhook-event-firing.json](https://github.com/ruanbekker/webhook-for-alertmanager/blob/master/webhook-event-firing.json)
 
-Example event when a alert resolves: [webhook-event-resolved.json)](https://github.com/ruanbekker/webhook-for-alertmanager/blob/master/webhook-event-resolved.json)
+Example event when a alert resolves: [webhook-event-resolved.json](https://github.com/ruanbekker/webhook-for-alertmanager/blob/master/webhook-event-resolved.json)
