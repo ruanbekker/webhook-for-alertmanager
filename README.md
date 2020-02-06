@@ -55,7 +55,10 @@ route:
   - match:
       alert_channel: webhook
     receiver: alert-to-webhook
-
+  - match:
+      alert_channel: slack
+    receiver: alert-to-slack
+    
 receivers:
 - name: 'alert-to-slack'
   slack_configs:
