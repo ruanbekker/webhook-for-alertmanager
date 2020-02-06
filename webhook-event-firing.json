@@ -1,0 +1,49 @@
+{
+  "receiver": "alert-to-webhook",
+  "status": "firing",
+  "alerts": [
+    {
+      "status": "firing",
+      "labels": {
+        "alert_channel": "webhook",
+        "alertname": "high_load",
+        "instance": "10.0.2.67:9100",
+        "job": "node",
+        "monitor": "pistack-monitor",
+        "nodename": "rpi-03",
+        "severity": "critical",
+        "team": "devops"
+      },
+      "annotations": {
+        "description": "rpi-03 of job node is under high load.",
+        "summary": "Instance rpi-03 under high load",
+        "title": "High Load Average on rpi-03"
+      },
+      "startsAt": "2020-02-06T17:31:02.490632004Z",
+      "endsAt": "0001-01-01T00:00:00Z",
+      "generatorURL": "https://prometheus.localhost/graph?g0.expr=node_load1+%2A+on%28instance%29+group_left%28nodename%29+%28node_uname_info%29+%3E+4&g0.tab=1",
+      "fingerprint": "0c1d98f1aca1725e"
+    }
+  ],
+  "groupLabels": {
+    "alertname": "high_load"
+  },
+  "commonLabels": {
+    "alert_channel": "webhook",
+    "alertname": "high_load",
+    "instance": "10.0.2.67:9100",
+    "job": "node",
+    "monitor": "pistack-monitor",
+    "nodename": "rpi-03",
+    "severity": "critical",
+    "team": "devops"
+  },
+  "commonAnnotations": {
+    "description": "rpi-03 of job node is under high load.",
+    "summary": "Instance rpi-03 under high load",
+    "title": "High Load Average on rpi-03"
+  },
+  "externalURL": "http://alertmanager.localhost",
+  "version": "4",
+  "groupKey": "{}/{alert_channel=\"webhook\"}:{alertname=\"high_load\"}"
+}
