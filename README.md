@@ -82,3 +82,7 @@ receivers:
       text: "Alert Channel:  {{ range .Alerts }}{{ .Labels.alert_channel }}{{ end }}\nRouted to Team: {{ range .Alerts }}{{ .Labels.team }}{{ end }} \nDescription of the alarm is: {{ range .Alerts }}{{ .Annotations.description }}{{ end }}\nSummary of the alarm is: {{ range .Alerts }}{{ .Annotations.summary }}{{ end }}"
 
 ```
+
+Example event when a alert fires: [webhook-event-firing.json)](https://github.com/ruanbekker/webhook-for-alertmanager/blob/master/webhook-event-firing.json)
+
+Example event when a alert resolves: [webhook-event-resolved.json)](https://github.com/ruanbekker/webhook-for-alertmanager/blob/master/webhook-event-resolved.json)
